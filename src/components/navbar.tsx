@@ -9,9 +9,9 @@ export default function Navbar() {
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex justify-between items-center">
             <div className="text-blue-600">
-              <a href="#" className="text-4xl font-bold">
+              <Link href="/" className="text-4xl font-bold">
                 ABC
-              </a>
+              </Link>
             </div>
             <div className="md:hidden">
               <button
