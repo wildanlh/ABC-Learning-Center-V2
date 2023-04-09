@@ -14,6 +14,12 @@ interface ScheduleItem {
   location: string;
 }
 
+interface CourseDetails {
+  [key: string]: CourseDetail;
+  java: CourseDetail;
+  python: CourseDetail;
+}
+
 interface CourseDetail {
   title: string;
   schedule: ScheduleItem[];
@@ -51,7 +57,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const data = {
+  const data: CourseDetails = {
     java: {
       title: "Java",
       schedule: [
