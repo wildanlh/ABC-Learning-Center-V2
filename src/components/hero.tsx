@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "./button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -25,7 +26,9 @@ export default function Hero() {
             programming.
           </p>
           <div className="flex justify-center lg:block">
-            <Button className="mt-6">See More</Button>
+            <Link href="/learn">
+              <Button className="mt-6">See More</Button>
+            </Link>
           </div>
         </div>
       </div>
