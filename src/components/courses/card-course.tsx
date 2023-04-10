@@ -24,7 +24,7 @@ const CardCourse: React.FC<Props> = ({
   urlCourse,
 }) => {
   return (
-    <div className="border p-5 bg-white drop-shadow mt-10 lg:mt-0 rounded-lg hover:drop-shadow-lg hover:duration-500 hover:ease-in-out md:mr-5">
+    <div className="border p-5 bg-white drop-shadow mt-10 lg:mt-0 rounded-lg hover:drop-shadow-lg hover:duration-500 hover:ease-in-out">
       <div className="flex flex-col items-center md:flex-row">
         <div className="h-1/2 md:w-1/4">
           <Image

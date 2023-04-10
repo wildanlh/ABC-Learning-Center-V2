@@ -24,7 +24,7 @@ export default function Home() {
       <Layout>
         <Hero />
         <div className="container mx-auto px-3 pt-28 lg:px-28">
-          <div className="flex flex-col items-center lg:flex-row">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-10 flex flex-col items-center lg:flex-row">
             {course.slice(0, 2).map((detail) => (
               <div key={detail.id}>
                 <CardCourse
