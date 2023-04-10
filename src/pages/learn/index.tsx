@@ -22,12 +22,12 @@ export default function Learn() {
     <>
       <Header pageTitle="Learn | ABC Learning Center" />
       <Layout>
-        <div className="container mx-auto px-28 pt-28">
+        <div className="container mx-auto px-3 pt-28 lg:px-28">
           <h1 className="text-4xl font-bold text-black text-center">
             Learn Course
           </h1>
           <div className="mt-10">
-            <div className="grid grid-cols-2 gap-10">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-10 flex flex-col items-center lg:flex-row">
               {course.map((detail) => (
                 <div key={detail.id}>
                   <CardCourse

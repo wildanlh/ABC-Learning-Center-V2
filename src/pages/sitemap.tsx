@@ -9,12 +9,12 @@ export default function Sitemap() {
     <>
       <Header pageTitle="Sitemap| ABC Learning Center" />
       <Layout>
-        <div className="container mx-auto px-28 pt-28">
+        <div className="container mx-auto px-3 pt-28 lg:px-28">
           <h1 className="text-4xl font-bold text-black text-center mb-10">
             Sitemap
           </h1>
           <div className="bg-blue-600 p-10 rounded-2xl drop-shadow-lg hover:drop-shadow-xl hover:duration-500">
-            <div className="grid grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <CardContact title="Home">
                 <hr />
                 <ul className="text-left space-y-2 mt-3">

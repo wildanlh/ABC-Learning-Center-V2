@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer className="bg-white m-4">
       <div className="w-full  mx-auto p-4 md:py-8">
-        <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
-        <div className="sm:flex sm:items-center sm:justify-center">
-          <ul className="flex flex-wrap items-center mb-6 md:space-x-4 font-bold text-blue-600  sm:mb-0">
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div className="flex items-center justify-center">
+          <ul className="flex flex-wrap items-center space-x-4 font-bold text-blue-600 ">
             <li>
               <Link href="/sitemap" className="hover:text-blue-500">
                 Sitemap
@@ -21,7 +21,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <span className="block text-base text-black sm:text-center ">
+        <span className="block text-base text-black text-center pb-10 md:pb-0">
           &copy; 2022. <b>ABC Learning Center.</b> All Right Reserved.
         </span>
       </div>

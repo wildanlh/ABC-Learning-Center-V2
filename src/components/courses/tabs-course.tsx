@@ -33,11 +33,11 @@ const TabsCourse: React.FC<MenuTabsProps> = ({
   return (
     <div>
       <div className="border-b border-gray-200 bg-white">
-        <nav className="flex">
+        <nav className="flex flex-col md:flex-row">
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              className={`py-4 px-6 text-black hover:border-b hover:border-b-slate-600 hover:duration-300 hover:ease-in-out ${
+              className={`py-4 md:px-6 text-black hover:border-b hover:border-b-slate-600 hover:duration-300 hover:ease-in-out ${
                 activeTab === tab.id
                   ? "border-b-2 font-bold border-black text-black"
                   : ""

@@ -23,8 +23,8 @@ export default function Home() {
       <Header pageTitle="ABC Learning Center" />
       <Layout>
         <Hero />
-        <div className="container mx-auto px-28 py-28">
-          <div className="grid grid-cols-2 gap-10">
+        <div className="container mx-auto px-3 pt-28 lg:px-28">
+          <div className="flex flex-col items-center lg:flex-row">
             {course.slice(0, 2).map((detail) => (
               <div key={detail.id}>
                 <CardCourse

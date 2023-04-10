@@ -24,13 +24,19 @@ const CardCourse: React.FC<Props> = ({
   urlCourse,
 }) => {
   return (
-    <div className="border p-5 bg-white drop-shadow rounded-lg hover:drop-shadow-lg hover:duration-500 hover:ease-in-out">
-      <div className="flex items-center">
-        <div className="w-1/4">
-          <Image src={imageUrl} alt={alt} width={350} height={350} />
+    <div className="border p-5 bg-white drop-shadow mt-10 lg:mt-0 rounded-lg hover:drop-shadow-lg hover:duration-500 hover:ease-in-out">
+      <div className="flex flex-col items-center md:flex-row">
+        <div className="h-1/2 md:w-1/4">
+          <Image
+            src={imageUrl}
+            alt={alt}
+            width={350}
+            height={350}
+            className="p-10 md:p-0"
+          />
         </div>
-        <div className="w-3/4 pl-6 text-black">
-          <h2 className="text-4xl font-bold mb-2">{titleCourse}</h2>
+        <div className="h-1/2 md:w-3/4 pl-6 text-black">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">{titleCourse}</h2>
           <p className="text-base">{descCourse}</p>
           <h2 className="text-2xl font-bold mb-2">${priceCourse}</h2>
 
@@ -55,7 +61,7 @@ const CardCourse: React.FC<Props> = ({
             </a>
           </div>
           <Link href={urlCourse}>
-            <Button type="button" className="mt-6">
+            <Button type="button" className="mt-6 mb-10 md:mb-0">
               Join Now
             </Button>
           </Link>

@@ -16,7 +16,7 @@ interface Props {
 
 const TableCourse: React.FC<Props> = ({ schedule }) => {
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div className="relative overflow-x-auto shadow-md rounded-lg">
       <table className="w-full text-sm text-left text-black ">
         <thead className="text-base text-white uppercase bg-blue-600">
           <tr>

@@ -38,14 +38,14 @@ export default function Contact() {
     <>
       <Header pageTitle="Contact Us | ABC Learning Center" />
       <Layout>
-        <div className="container mx-auto px-28 pt-28">
+        <div className="container mx-auto px-3 pt-28 lg:px-28">
           <h1 className="text-4xl font-bold text-black text-center mb-10">
             Contact Us
           </h1>
           <div className="flex justify-center">
             <FollowContact />
           </div>
-          <div className="grid grid-cols-4 gap-8 mt-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
             <CardContact title="Contact">
               {contact.map((list) => (
                 <div key={list.id}>

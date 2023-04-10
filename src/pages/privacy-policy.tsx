@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
     <>
       <Header pageTitle="Privacy Policy | ABC Learning Center" />
       <Layout>
-        <div className="container mx-auto px-28 pt-28 w-1/2">
+        <div className="container mx-auto px-3 pt-28 lg:px-28">
           <div className="mb-10 text-justify">
             <h2 className="text-2xl font-bold mb-2">
               Privacy Policy for ABC Corporation

@@ -19,11 +19,11 @@ export default function About() {
     <>
       <Header pageTitle="About Us | ABC Learning Center" />
       <Layout>
-        <div className="bg-blue-600 w-full">
-          <div className="container mx-auto px-28 py-28">
+        <div className="bg-blue-600 w-full pb-12">
+          <div className="container mx-auto px-3 pt-28 lg:px-28">
             <div className="text-white text-center">
               <h1 className="text-4xl font-bold text-white mb-10">About Us</h1>
-              <p className="text-lg">
+              <p className="text-base md:text-lg">
                 ABC Learning Center is a Professional Educational Platform. Here
                 we will provide you only interesting content, which you will
                 like very much. We&apos;re dedicated to providing you the best
@@ -39,8 +39,8 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-28 pt-28">
-          <div className="grid grid-cols-4 gap-10 border p-10 rounded-lg">
+        <div className="container mx-auto px-3 pt-28 lg:px-28">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10 border p-10 rounded-lg">
             <div className="col-span-full">
               <h1 className="text-4xl font-bold text-black text-center">
                 Our Team

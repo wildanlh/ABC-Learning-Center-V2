@@ -4,9 +4,9 @@ import Button from "./button";
 
 export default function Hero() {
   return (
-    <div className="container mx-auto px-28 pt-28">
-      <div className="flex items-center">
-        <div className="w-1/2">
+    <div className="container mx-auto px-3 pt-28 lg:px-28">
+      <div className="flex flex-col items-center lg:flex-row">
+        <div className="w-full lg:w-1/2">
           <Image
             src="/assets/images/laptop.png"
             alt="laptop"
@@ -15,15 +15,18 @@ export default function Hero() {
             className="rounded-lg w-full"
           />
         </div>
-        <div className="w-1/2 pl-6 text-black">
-          <h2 className="text-5xl font-bold mb-2">ABC Learning Center</h2>
-          <p className="text-lg">
+        <div className="w-full lg:w-1/2 lg:pl-6 text-black">
+          <h2 className="font-bold mb-2 text-4xl md:text-5xl mt-10 lg:mt-0 text-center lg:text-left">
+            ABC Learning Center
+          </h2>
+          <p className="text-base md:text-lg text-center lg:text-left">
             Welcome to ABC Learning Center, a website where you can learn about
             software development or web development, and much more about
             programming.
           </p>
-
-          <Button className="mt-6">See More</Button>
+          <div className="flex justify-center lg:block">
+            <Button className="mt-6">See More</Button>
+          </div>
         </div>
       </div>
     </div>

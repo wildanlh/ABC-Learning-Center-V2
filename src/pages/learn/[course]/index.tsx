@@ -56,17 +56,22 @@ const CoursePage: React.FC<Props> = ({ courseDetail }) => {
         return (
           <div>
             {courseDetail.instructor.map((inst) => (
-              <div className="flex items-center mt-6 space-x-3" key={inst.name}>
-                <Image
-                  className="w-48 h-48 rounded-full object-cover"
-                  src={inst.image}
-                  alt={inst.name}
-                  width={300}
-                  height={300}
-                />
+              <div
+                className="flex flex-col md:flex-row md:items-center md:mt-6 md:space-x-3"
+                key={inst.name}
+              >
+                <div className="h-48 aspect-square flex justify-center mb-10 md:mb-0">
+                  <Image
+                    className="w-48 h-48 rounded-full object-cover"
+                    src={inst.image}
+                    alt={inst.name}
+                    width={300}
+                    height={300}
+                  />
+                </div>
                 <div>
-                  <div className="flex items-center divide-x-2 divide-gray-300 mb-2">
-                    <p className="text-3xl pr-3 font-bold text-black">
+                  <div className="flex flex-col md:flex-row md:items-center divide-x-2 divide-gray-300 mb-2">
+                    <p className="text-3xl pr-3 font-bold text-black mb-2 md:mb-0">
                       {inst.name}
                     </p>
                     <span className="px-3">
@@ -108,7 +113,7 @@ const CoursePage: React.FC<Props> = ({ courseDetail }) => {
                       {inst.rating} Rating
                     </span>
                   </div>
-                  <div className="w-3/4">
+                  <div className="lg:w-3/4">
                     <span>{inst.desc}</span>
                   </div>
                 </div>
@@ -228,7 +233,7 @@ const CoursePage: React.FC<Props> = ({ courseDetail }) => {
         pageTitle={`${courseDetail.title} Course | ABC Learning Center`}
       />
       <Layout>
-        <div className="container mx-auto px-28 pt-28">
+        <div className="container mx-auto px-3 pt-28 lg:px-28">
           <h1 className="text-4xl font-bold text-black text-center">
             {courseDetail.title} Course
           </h1>

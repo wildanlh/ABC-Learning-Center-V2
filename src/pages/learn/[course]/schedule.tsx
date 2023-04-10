@@ -36,7 +36,7 @@ const SchedulePage: React.FC<Props> = ({ courseDetail }) => {
         pageTitle={`${courseDetail.title} Schedule | ABC Learning Center`}
       />
       <Layout>
-        <div className="container mx-auto px-28 pt-28">
+        <div className="container mx-auto px-3 pt-28 lg:px-28">
           <h1 className="text-4xl font-bold text-black text-center mb-10">
             {courseDetail.title} Schedule
           </h1>
