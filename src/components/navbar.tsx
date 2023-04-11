@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./button";
 import Link from "next/link";
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className="fixed top-0 w-full z-40 bg-white drop-shadow-md">
       <div className="container mx-auto px-12 py-4">
@@ -17,6 +23,7 @@ export default function Navbar() {
               <button
                 type="button"
                 className="text-black hover:text-black focus:outline-none focus:text-black"
+                onClick={toggleMobileMenu}
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -55,7 +62,11 @@ export default function Navbar() {
               </button>
             </div>
           </div>
-          <div className="hidden md:flex md:items-center md:space-x-4">
+          <div
+            className={`${
+              isMobileMenuOpen ? "block" : "hidden"
+            } md:flex md:items-center md:space-x-4 py-5 md:py-0`}
+          >
             <Link
               href="/"
               className="py-2 px-4  text-black font-bold hover:border-b-2 hover:border-black duration-100 ease-linear"
@@ -80,7 +91,9 @@ export default function Navbar() {
             >
               Contact
             </Link>
-            <Button className="">Join</Button>
+            <div className="flex">
+              <Button className="mt-5 md:mt-0">Join</Button>
+            </div>
           </div>
         </div>
       </div>
