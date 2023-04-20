@@ -134,7 +134,7 @@
       "rating": 4.89,
       "reviewers": 100,
       "image": "/assets/images/ms-office.png",
-      "url": "/learn/ms-office"
+      "url": "/learn/msoffice"
     }
   ],
   "courseDetail": [
@@ -449,7 +449,7 @@
       ]
     },
     {
-      "id": "ms-office",
+      "id": "msoffice",
       "title": "Microsoft Office",
       "willGet": [
         "Learn practical methods to sort and filter your data in Excel",

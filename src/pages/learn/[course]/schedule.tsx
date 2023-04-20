@@ -52,7 +52,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     { params: { course: "java" } },
     { params: { course: "python" } },
     { params: { course: "net" } },
-    { params: { course: "ms-office" } },
+    { params: { course: "msoffice" } },
   ];
 
   return { paths, fallback: false };
