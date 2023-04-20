@@ -210,7 +210,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
         },
       ],
     },
-    msOffice: {
+    msoffice: {
       title: "Microsoft Office",
       schedule: [
         {
